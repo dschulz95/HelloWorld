@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+    <string-array name="language">
+        <item>Deutsch</item>
+        <item>Englisch</item>
+        <item>Kroatisch</item>
+    </string-array>
+</resources>
