@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         langSpinner = findViewById(R.id.langSpinner);
         language = 'd';
 
-        //Textfeld sichtbar machen und jeweils unterschiedliche Ausgabe
+        //Textfeld sichtbar machen und jeweils sprachspezifische Ausgabe
         showButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //Sprache auswählen in Spinner
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.language,android.R.layout.simple_spinner_dropdown_item);
         langSpinner.setAdapter(adapter);
         langSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
